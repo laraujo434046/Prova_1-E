@@ -1,0 +1,29 @@
+Pontos
+1 - 2,5
+2 - 2,5
+3 - 2,5
+4 - 2,5
+
+Explicação:
+
+Questão 01: Implementei corretamente os componentes Questao01A e Questao01B, 
+passei props do componente pai para o componente filho, calculei as médias 
+corretamente e exibiu apenas os alunos com média superior a 6.0. Pontuação máxima: 2,5 pontos.
+
+Questão 02: Implementei corretamente o componente Questao02, exibi a imagem 
+do Pokémon, consegui fazer a alteração entre a imagem frontal e de costas 
+corretamente ao pressionar o botão. Pontuação máxima: 2,5 pontos.
+
+Questão 03: Expliquei corretamente.
+Pontuação máxima: 2,5 pontos.
+
+Questão 04: Expliquei corretamente como o uso de Contextos pode resolver o 
+problema de Props Drilling e forneci um bom exemplo (em código) que ilustra o uso 
+de Contextos de forma adequada. Pontuação máxima: 2,5 pontos.
+
+Total: 10,0 pontos.
+
+Na Minha pontuação atribuida considero que todas as funcionalidades solicitadas foram 
+implementadas corretamente em cada questão, bem como as explicações fornecidas foram 
+claras e adequadas. Cada questão tem a pontuação máxima de 2,5 pontos e acredito eu que 
+nenhuma penalidade precise ser aplicada :D

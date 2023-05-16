@@ -1,0 +1,55 @@
+O uso de Contextos pode resolver o problema de "Props Drilling" ao permitir 
+o compartilhamento de dados entre componentes sem a necessidade de passar 
+explicitamente as props por todos os níveis da árvore de componentes.
+
+Vamos considerar um exemplo em que temos três componentes aninhados: 
+ComponenteA, ComponenteB e ComponenteC. O ComponenteA precisa fornecer uma 
+propriedade para o ComponenteC, mas essa propriedade não é necessária para 
+o ComponenteB.
+
+Sem o uso de Contextos, o fluxo de props seria:
+
+ComponenteA -> ComponenteB -> ComponenteC
+
+Nesse caso, o ComponenteB teria que receber a propriedade do ComponenteA e, 
+em seguida, repassá-la para o ComponenteC, mesmo sem utilizá-la em suas próprias
+funcionalidades. Isso é conhecido como "Props Drilling". No entanto, com o uso de 
+Contextos, podemos simplificar esse fluxo:
+
+ComponenteA (Context Provider) -> ComponenteB -> ComponenteC (Context Consumer)
+
+O ComponenteA atua como um Context Provider, fornecendo o contexto (dados) para 
+seus componentes filhos. O ComponenteC, por sua vez, pode consumir diretamente o 
+contexto fornecido pelo ComponenteA, sem a necessidade de passar a propriedade pelo 
+ComponenteB.
+
+Isso elimina a necessidade de propagar as props desnecessariamente por componentes 
+intermediários, melhorando a legibilidade e a manutenibilidade do código.
+
+Visualmente, podemos representar a estrutura da seguinte forma: 
+(ia fazer um desenho no paint hehe :D)
+
+           +--------------------+
+           |    ComponenteA     |
+           | (ContextoProvedor) |
+           +----------+---------+
+                      |
+             +--------v--------+
+             |   ComponenteB   |
+             +--------+--------+
+                      |
+             +--------v--------+
+             |   ComponenteC   |
+             +-----------------+
+
+O Contexto (dados) fornecido pelo ComponenteA pode ser consumido 
+pelo ComponenteC sem a necessidade de passar pelas camadas intermediárias, 
+como o ComponenteB.
+
+Assim, o uso de Contextos resolve o problema de "Props Drilling" ao oferecer 
+uma maneira eficiente de compartilhar dados entre componentes, evitando a 
+propagação desnecessária de props por componentes que não precisam delas.
+
+Por favor, note que a implementação do exemplo em código não foi fornecida, 
+conforme solicitado. O objetivo era apenas ilustrar o conceito de Contextos e 
+como eles podem resolver o problema de "Props Drilling".
